@@ -9,7 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server</Support>
   <Project>project-page.com</Project>
-  <Overview>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
+  <Overview>This is the first docker that needs to be installed but not before reading the support forum.&#xD;
 https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
 &#xD;
 Official docker image for mysql 5.7 database server.</Overview>
