@@ -48,3 +48,5 @@ cp onlyoffice.key /mnt/user/appdata/onlyoffice/CommunityServer/data/certs/
 cp onlyoffice.crt /mnt/user/appdata/onlyoffice/CommunityServer/data/certs/
 cp dhparam.pem /mnt/user/appdata/onlyoffice/CommunityServer/data/certs/
 chmod 400 /mnt/user/appdata/onlyoffice/CommunityServer/data/certs/onlyoffice.key
+
+
