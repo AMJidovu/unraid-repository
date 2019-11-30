@@ -16,7 +16,7 @@ Official docker image for mysql 5.7 database server.</Overview>
   <Category>Network:Management Productivity: Tools:Utilities</Category>
   <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/onlyoffice-mysql-server.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/img/mysql.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
