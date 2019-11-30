@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>support-thread.com</Support>
+  <Support>https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server</Support>
   <Project>https://www.onlyoffice.com/</Project>
   <Overview>ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.&#xD;
 	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.</Overview>
