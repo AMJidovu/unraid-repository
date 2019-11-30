@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Support>support-thread.com</Support>
+  <Support>https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server</Support>
   <Project>project-page.com</Project>
   <Overview>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
 https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
