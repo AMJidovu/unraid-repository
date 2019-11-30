@@ -1,4 +1,4 @@
-<?xml version="1.0"?
+<?xml version="1.0"?>
 <Container version="2">
   <Name>onlyoffice-mysql-server</Name>
   <Repository>mysql:5.7</Repository>
@@ -12,23 +12,21 @@
   <Overview>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
 https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
 &#xD;
-Official docker image for mysql 5.7 database server.&#xD;
-	Set the database name, root password, mysql user name, and mysql user password.</Overview>
+Official docker image for mysql 5.7 database server.</Overview>
   <Category>Network:Management Productivity: Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:8088]</WebUI>
+  <WebUI/>
   <TemplateURL>https://raw.githubusercontent.com/jshridha/templates/master/Bungy/mysql.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1575127382</DateInstalled>
+  <DateInstalled>1575127946</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
   <Description>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
 https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
 &#xD;
-Official docker image for mysql 5.7 database server.&#xD;
-	Set the database name, root password, mysql user name, and mysql user password.</Description>
+Official docker image for mysql 5.7 database server.</Description>
   <Networking>
     <Mode>onlyoffice</Mode>
     <Publish>
