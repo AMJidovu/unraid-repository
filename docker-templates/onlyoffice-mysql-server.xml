@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0"?
 <Container version="2">
   <Name>onlyoffice-mysql-server</Name>
   <Repository>mysql:5.7</Repository>
