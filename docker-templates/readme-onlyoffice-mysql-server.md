@@ -8,13 +8,10 @@ sudo mkdir -p "/mnt/user/appdata/onlyoffice/mysql/data"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/mysql/initdb"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/mysql/logs"; \
 chown 999:999 /mnt/user/appdata/onlyoffice/mysql/logs; \
-
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/CommunityServer/data"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/CommunityServer/logs"; \
-
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/DocumentServer/data"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/DocumentServer/logs"; \
-
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/MailServer/data/certs"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/MailServer/logs";
 
