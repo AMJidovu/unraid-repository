@@ -20,7 +20,7 @@ Official docker image for mysql 5.7 database server.</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1575127946</DateInstalled>
+  <DateInstalled>1575129331</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
   <Description>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
@@ -61,7 +61,7 @@ Official docker image for mysql 5.7 database server.</Description>
   </Data>
   <Environment>
     <Variable>
-      <Value/>
+      <Value>my-secret-pw</Value>
       <Name>MYSQL_ROOT_PASSWORD</Name>
       <Mode/>
     </Variable>
@@ -77,6 +77,6 @@ Official docker image for mysql 5.7 database server.</Description>
   <Config Name="Host Path 2" Target="/var/lib/mysql" Default="/mnt/user/appdata/onlyoffice/mysql/data" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/data</Config>
   <Config Name="Host Path 3" Target="/docker-entrypoint-initdb.d" Default="/mnt/user/appdata/onlyoffice/mysql/initdb" Mode="rw" Description="Container Path: /docker-entrypoint-initdb.d" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/initdb</Config>
   <Config Name="Host Path 4" Target="/var/log/mysql" Default="/mnt/user/appdata/onlyoffice/mysql/logs" Mode="rw" Description="Container Path: /var/log/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/logs</Config>
-  <Config Name="Host Key 1" Target="MYSQL_ROOT_PASSWORD" Default="my-secret-pw" Mode="" Description="Container Variable: MYSQL_ROOT_PASSWORD . &#13;&#10;Add your desired root password in the value tab above my-secret-pw." Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Host Key 1" Target="MYSQL_ROOT_PASSWORD" Default="my-secret-pw" Mode="" Description="Container Variable: MYSQL_ROOT_PASSWORD . &#13;&#10;Add your desired root password in the value tab above my-secret-pw." Type="Variable" Display="always" Required="true" Mask="true">my-secret-pw</Config>
   <Config Name="Host Key 2" Target="MYSQL_DATABASE" Default="onlyoffice" Mode="" Description="Container Variable: MYSQL_DATABASE" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice</Config>
 </Container>
