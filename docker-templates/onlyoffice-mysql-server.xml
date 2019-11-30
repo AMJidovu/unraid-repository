@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>onlyoffice-mysql-server</Name>
+  <Repository>mysql:5.7</Repository>
+  <Registry>https://registry.hub.docker.com/_/mysql/</Registry>
+  <Network>onlyoffice</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>support-thread.com</Support>
+  <Project>project-page.com</Project>
+  <Overview>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
+https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
+&#xD;
+Official docker image for mysql 5.7 database server.</Overview>
+  <Category>Network:Management Productivity: Tools:Utilities</Category>
+  <WebUI/>
+  <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/onlyoffice-mysql-server.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/docker-library/docs/master/mysql/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1575129331</DateInstalled>
+  <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
+  <DonateLink>https://www.paypal.me/xternet</DonateLink>
+  <Description>This is the first docker that needs to be installed but not before reading readme-onlyoffice-mysql-server.md&#xD;
+https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/readme-onlyoffice-mysql-server.md&#xD;
+&#xD;
+Official docker image for mysql 5.7 database server.</Description>
+  <Networking>
+    <Mode>onlyoffice</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3306</HostPort>
+        <ContainerPort>3306</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/mysql/conf.d</HostDir>
+      <ContainerDir>/etc/mysql/conf.d</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/mysql/data</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/mysql/initdb</HostDir>
+      <ContainerDir>/docker-entrypoint-initdb.d</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/mysql/logs</HostDir>
+      <ContainerDir>/var/log/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>my-secret-pw</Value>
+      <Name>MYSQL_ROOT_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>onlyoffice</Value>
+      <Name>MYSQL_DATABASE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="3306" Default="3306" Mode="tcp" Description="Container Port: 3306" Type="Port" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="Host Path 1" Target="/etc/mysql/conf.d" Default="/mnt/user/appdata/onlyoffice/mysql/conf.d" Mode="rw" Description="Container Path: /etc/mysql/conf.d" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/conf.d</Config>
+  <Config Name="Host Path 2" Target="/var/lib/mysql" Default="/mnt/user/appdata/onlyoffice/mysql/data" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/data</Config>
+  <Config Name="Host Path 3" Target="/docker-entrypoint-initdb.d" Default="/mnt/user/appdata/onlyoffice/mysql/initdb" Mode="rw" Description="Container Path: /docker-entrypoint-initdb.d" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/initdb</Config>
+  <Config Name="Host Path 4" Target="/var/log/mysql" Default="/mnt/user/appdata/onlyoffice/mysql/logs" Mode="rw" Description="Container Path: /var/log/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/mysql/logs</Config>
+  <Config Name="Host Key 1" Target="MYSQL_ROOT_PASSWORD" Default="my-secret-pw" Mode="" Description="Container Variable: MYSQL_ROOT_PASSWORD . &#13;&#10;Add your desired root password in the value tab above my-secret-pw." Type="Variable" Display="always" Required="true" Mask="true">my-secret-pw</Config>
+  <Config Name="Host Key 2" Target="MYSQL_DATABASE" Default="onlyoffice" Mode="" Description="Container Variable: MYSQL_DATABASE" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice</Config>
+</Container>
