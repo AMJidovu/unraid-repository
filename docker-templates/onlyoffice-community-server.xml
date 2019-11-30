@@ -17,7 +17,7 @@ ONLYOFFICE Community Server is a free open source collaborative system developed
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8088]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/onlyoffice-community-server.xml</TemplateURL>
-  <Icon>https://pbs.twimg.com/profile_images/801693107125362689/al5MQBQM_normal.jpg</Icon>
+  <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/d5a562fa4a7b73065dd022e585d80d4b77d0abfa/img/onlyoffice-ce-ds.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
