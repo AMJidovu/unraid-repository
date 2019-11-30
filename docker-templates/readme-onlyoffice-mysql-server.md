@@ -18,6 +18,11 @@ sudo mkdir -p "/mnt/user/appdata/onlyoffice/DocumentServer/logs"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/MailServer/data/certs"; \
 sudo mkdir -p "/mnt/user/appdata/onlyoffice/MailServer/logs";
 
+# This is when we create the onlyoffice network.
+
+sudo docker network create --driver bridge onlyoffice
+
+# This is when we create the the sql configs etc required before running the onlyoffice mysql docker
 
 echo "[mysqld]
 sql_mode = 'NO_ENGINE_SUBSTITUTION'
