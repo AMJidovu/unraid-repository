@@ -13,7 +13,7 @@
 	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8086]</WebUI>
-  <TemplateURL>template</>
+  <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/docker-templates/documentserver.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/d5a562fa4a7b73065dd022e585d80d4b77d0abfa/img/onlyoffice-ce-ds.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
