@@ -18,7 +18,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1575318431</DateInstalled>
+  <DateInstalled>1575322880</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
   <Description>    ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.&#xD;
@@ -52,11 +52,6 @@
     <Volume>
       <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/logs</HostDir>
       <ContainerDir>/var/log/onlyoffice</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/mysql</HostDir>
-      <ContainerDir>/var/lib/mysql</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
@@ -95,8 +90,7 @@
   <Config Name="Default Database Name" Target="MYSQL_SERVER_DB_NAME" Default="onlyoffice" Mode="" Description="Container Variable: MYSQL_SERVER_DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice</Config>
   <Config Name="MySQL Host - Read Description for Changes ----&amp;gt; " Target="MYSQL_SERVER_HOST" Default="localhost" Mode="" Description="Container Variable: MYSQL_SERVER_HOST  &amp;lt;----&amp;gt; 'localhost' is used when we do not make use of the mail docker or we do not want external database at all, though for the mail docker the external database it is required &amp;lt;----&amp;gt; for external local database use '$mysql-docker-name' ( name of the docker that is hosting the mysql database) as long is on the 'onlyoffice' network we created before starting the docker/s or you can use unraid IP you see in the up right corner, but it will be better to just use the name of the docker hosting mysql if your unraid IP is not static. &amp;lt;----&amp;gt; For database hosted on another server use the external IP ( internet IP )." Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
   <Config Name="Default OnlyOffice Database Username" Target="MYSQL_SERVER_USER" Default="onlyoffice_user" Mode="" Description="Container Variable: MYSQL_SERVER_USER" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice_user</Config>
-  <Config Name="Default OnlyOffice Database Password" Target="MYSQL_SERVER_PASS" Default="onlyoffice_pass" Mode="" Description="Container Variable: MYSQL_SERVER_PASS" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice_pass</Config>
+  <Config Name="Default OnlyOffice Database Password" Target="MYSQL_SERVER_PASS" Default="onlyoffice_pass" Mode="" Description="Container Variable: MYSQL_SERVER_PASS" Type="Variable" Display="always" Required="true" Mask="true">onlyoffice_pass</Config>
   <Config Name="Community Server Data" Target="/var/www/onlyoffice/Data" Default="/mnt/user/appdata/onlyoffice/CommunityServer/data" Mode="rw" Description="Container Path: /var/www/onlyoffice/Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/data</Config>
   <Config Name="Community Server Logs" Target="/var/log/onlyoffice" Default="/mnt/user/appdata/onlyoffice/CommunityServer/logs" Mode="rw" Description="Container Path: /var/log/onlyoffice" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/logs</Config>
-  <Config Name="Mounted Community Server MySQL Database" Target="/var/lib/mysql" Default="/mnt/user/appdata/onlyoffice/CommunityServer/mysql" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/mysql</Config>
 </Container>
