@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>onlyoffice-community-server</Name>
+  <Repository>xternet/unraid-onlyoffice-community-server</Repository>
+  <Registry>https://hub.docker.com/repository/docker/xternet/unraid-onlyoffice-community-server</Registry>
+  <Network>onlyoffice</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>support-forum.com</Support>
+  <Project>https://www.onlyoffice.com/</Project>
+  <Overview>    ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.&#xD;
+	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/img/onlyoffice-ce-ds.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1575318431</DateInstalled>
+  <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
+  <DonateLink>https://www.paypal.me/xternet</DonateLink>
+  <Description>    ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.&#xD;
+	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it</Description>
+  <Networking>
+    <Mode>onlyoffice</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>4431</HostPort>
+        <ContainerPort>443</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>5222</HostPort>
+        <ContainerPort>5222</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/data</HostDir>
+      <ContainerDir>/var/www/onlyoffice/Data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/logs</HostDir>
+      <ContainerDir>/var/log/onlyoffice</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/mysql</HostDir>
+      <ContainerDir>/var/lib/mysql</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>my-secret-pw</Value>
+      <Name>MYSQL_SERVER_ROOT_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>onlyoffice</Value>
+      <Name>MYSQL_SERVER_DB_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>localhost</Value>
+      <Name>MYSQL_SERVER_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>onlyoffice_user</Value>
+      <Name>MYSQL_SERVER_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>onlyoffice_pass</Value>
+      <Name>MYSQL_SERVER_PASS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="HTTP Port" Target="80" Default="8080" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="HTTPS Port" Target="443" Default="4431" Mode="tcp" Description="Container Port: 443" Type="Port" Display="always" Required="true" Mask="false">4431</Config>
+  <Config Name="Port for XMPP-compatible instant messaging client (for ONLYOFFICE Talk correct work)" Target="5222" Default="5222" Mode="tcp" Description="Container Path: 5222" Type="Port" Display="always" Required="true" Mask="false">5222</Config>
+  <Config Name="Root Password for MySQL ( Default password is 'my-secret-pw' )" Target="MYSQL_SERVER_ROOT_PASSWORD" Default="my-secret-pw" Mode="" Description="Container Variable: MYSQL_SERVER_ROOT_PASSWORD" Type="Variable" Display="always" Required="true" Mask="true">my-secret-pw</Config>
+  <Config Name="Default Database Name" Target="MYSQL_SERVER_DB_NAME" Default="onlyoffice" Mode="" Description="Container Variable: MYSQL_SERVER_DB_NAME" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice</Config>
+  <Config Name="MySQL Host - Read Description for Changes ----&amp;gt; " Target="MYSQL_SERVER_HOST" Default="localhost" Mode="" Description="Container Variable: MYSQL_SERVER_HOST  &amp;lt;----&amp;gt; 'localhost' is used when we do not make use of the mail docker or we do not want external database at all, though for the mail docker the external database it is required &amp;lt;----&amp;gt; for external local database use '$mysql-docker-name' ( name of the docker that is hosting the mysql database) as long is on the 'onlyoffice' network we created before starting the docker/s or you can use unraid IP you see in the up right corner, but it will be better to just use the name of the docker hosting mysql if your unraid IP is not static. &amp;lt;----&amp;gt; For database hosted on another server use the external IP ( internet IP )." Type="Variable" Display="always" Required="true" Mask="false">localhost</Config>
+  <Config Name="Default OnlyOffice Database Username" Target="MYSQL_SERVER_USER" Default="onlyoffice_user" Mode="" Description="Container Variable: MYSQL_SERVER_USER" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice_user</Config>
+  <Config Name="Default OnlyOffice Database Password" Target="MYSQL_SERVER_PASS" Default="onlyoffice_pass" Mode="" Description="Container Variable: MYSQL_SERVER_PASS" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice_pass</Config>
+  <Config Name="Community Server Data" Target="/var/www/onlyoffice/Data" Default="/mnt/user/appdata/onlyoffice/CommunityServer/data" Mode="rw" Description="Container Path: /var/www/onlyoffice/Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/data</Config>
+  <Config Name="Community Server Logs" Target="/var/log/onlyoffice" Default="/mnt/user/appdata/onlyoffice/CommunityServer/logs" Mode="rw" Description="Container Path: /var/log/onlyoffice" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/logs</Config>
+  <Config Name="Mounted Community Server MySQL Database" Target="/var/lib/mysql" Default="/mnt/user/appdata/onlyoffice/CommunityServer/mysql" Mode="rw" Description="Container Path: /var/lib/mysql" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice/CommunityServer/mysql</Config>
+</Container>
