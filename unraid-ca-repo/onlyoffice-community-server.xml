@@ -54,11 +54,6 @@
       <ContainerDir>/var/log/onlyoffice</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>/mnt/user/appdata/onlyoffice/CommunityServer/mysql</HostDir>
-      <ContainerDir>/var/lib/mysql</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment>
     <Variable>
