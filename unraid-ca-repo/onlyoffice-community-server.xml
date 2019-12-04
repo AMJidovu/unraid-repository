@@ -9,7 +9,9 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server/</Support>
   <Project>https://www.onlyoffice.com/</Project>
-  <Overview>    ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.&#xD;
+  <Overview>Before you start this container you need to create the onlyoffice network. &#xD;
+	  Open Unraid terminal and paste this command in there: &#xD;
+	  sudo docker network create --driver bridge onlyoffice &#xD;
 	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
