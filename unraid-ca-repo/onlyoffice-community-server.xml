@@ -23,7 +23,9 @@
   <DateInstalled>1575323624</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
-  <Description>    ONLYOFFICE Community Server is a free open source collaborative system developed to manage documents, projects, customer relationship and email correspondence, all in one place.&#xD;
+  <Description>Before you start this container you need to create the onlyoffice network. &#xD;
+	  Open Unraid terminal and paste this command in there: &#xD;
+	  sudo docker network create --driver bridge onlyoffice &#xD;
 	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it</Description>
   <Networking>
     <Mode>onlyoffice</Mode>
