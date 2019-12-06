@@ -11,24 +11,30 @@
   <Project>https://www.onlyoffice.com/</Project>
   <Overview>Before you start this container you need to create the onlyoffice network. &#xD;
 	  Open Unraid terminal and paste this command in there: &#xD;
-	  sudo docker network create --driver bridge onlyoffice &#xD;
-	  ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.&#xD;
-	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.</Overview>
-  <Category>Productivity: Tools:</Category>
+	  " sudo docker network create --driver bridge onlyoffice " -- withouth the " "&#xD;
+          If you pair this container with onlyoffice-community-server then this container needs to start first. &#xD;
+	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.&#xD;
+For more information visit the support thread &#xD;
+https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server/&#xD;
+</Overview>
+  <Category>Productivity: Tools:Utilities</Category>
   <WebUI>http://[IP]:[PORT:8082]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/unraid-ca-repo/onlyoffice-document-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/d5a562fa4a7b73065dd022e585d80d4b77d0abfa/img/onlyoffice-ce-ds.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1575323885</DateInstalled>
+  <DateInstalled>1575675669</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
   <Description>Before you start this container you need to create the onlyoffice network. &#xD;
 	  Open Unraid terminal and paste this command in there: &#xD;
-	  sudo docker network create --driver bridge onlyoffice &#xD;
-	  ONLYOFFICE Document Server is an online office suite comprising viewers and editors for texts, spreadsheets and presentations, fully compatible with Office Open XML formats: .docx, .xlsx, .pptx and enabling collaborative editing in real time.&#xD;
-	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.</Description>
+	  " sudo docker network create --driver bridge onlyoffice " -- withouth the " "&#xD;
+          If you pair this container with onlyoffice-community-server then this container needs to start first. &#xD;
+	HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it. Add fonts by placing .ttf in the font folder and force updating the container.&#xD;
+For more information visit the support thread &#xD;
+https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server/&#xD;
+</Description>
   <Networking>
     <Mode>onlyoffice</Mode>
     <Publish>
