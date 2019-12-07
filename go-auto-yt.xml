@@ -23,7 +23,7 @@ Makes downloading videos/audio automatically very easy - Just paste a link of a 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1575709819</DateInstalled>
+  <DateInstalled>1575712158</DateInstalled>
   <DonateText>Donate me a coffee or a beer if you like my work :)</DonateText>
   <DonateLink>https://www.paypal.me/xternet</DonateLink>
   <Description> GoAutoYT makes it easy for you to automatically download videos from as many YouTube channels as you'd like.&#xD;
@@ -55,9 +55,28 @@ Makes downloading videos/audio automatically very easy - Just paste a link of a 
       <Mode>rw</Mode>
     </Volume>
   </Data>
-  <Environment/>
+  <Environment>
+    <Variable>
+      <Value>1001</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1001</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0022</Value>
+      <Name>UMASK_SET</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
   <Labels/>
   <Config Name="HTTP Port" Target="8080" Default="9000" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">9000</Config>
   <Config Name="Mounted Downloads Folder" Target="/app/downloads" Default="/mnt/user/appdata/go-auto-yt/downloads" Mode="rw" Description="Container Path: /app/downloads" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/go-auto-yt/downloads</Config>
   <Config Name="Mounted Configuration Folder" Target="/app/config" Default="/mnt/user/appdata/go-auto-yt/config" Mode="rw" Description="Container Path: /app/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/go-auto-yt/config</Config>
+  <Config Name="User Identifier ( PUID )" Target="PUID" Default="1001" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">1001</Config>
+  <Config Name="Group ID ( PGID )" Target="PGID" Default="1001" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">1001</Config>
+  <Config Name="User File Creation MASK ( UMASK )" Target="UMASK_SET" Default="0022" Mode="" Description="Container Variable: UMASK_SET" Type="Variable" Display="always" Required="false" Mask="false">0022</Config>
 </Container>
