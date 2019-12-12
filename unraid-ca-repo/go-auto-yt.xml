@@ -67,7 +67,7 @@ Makes downloading videos/audio automatically very easy - Just paste a link of a 
       <Mode/>
     </Variable>
     <Variable>
-      <Value>0044</Value>
+      <Value>0022</Value>
       <Name>UMASK_SET</Name>
       <Mode/>
     </Variable>
@@ -78,5 +78,5 @@ Makes downloading videos/audio automatically very easy - Just paste a link of a 
   <Config Name="Mounted Configuration Folder" Target="/app/config" Default="/mnt/user/appdata/go-auto-yt/config" Mode="rw" Description="Container Path: /app/config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/go-auto-yt/config</Config>
   <Config Name="User Identifier ( PUID )" Target="PUID" Default="1000" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
   <Config Name="Group ID ( PGID )" Target="PGID" Default="1000" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">1000</Config>
-  <Config Name="User File Creation MASK ( UMASK )" Target="UMASK_SET" Default="0044" Mode="" Description="Container Variable: UMASK_SET" Type="Variable" Display="always" Required="false" Mask="false">0044</Config>
+  <Config Name="User File Creation MASK ( UMASK )" Target="UMASK_SET" Default="0022" Mode="" Description="Container Variable: UMASK_SET" Type="Variable" Display="always" Required="false" Mask="false">0022</Config>
 </Container>
