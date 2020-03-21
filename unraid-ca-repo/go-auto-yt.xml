@@ -17,7 +17,7 @@
 &#xD;
 Makes downloading videos/audio automatically very easy - Just paste a link of a channel you want to download, set a checking interval and that's it, the server will keep checking for new uploads and download if necessary.</Overview>
   <Category>Downloaders: Tools: Status:Stable Status:Beta</Category>
-  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/img/go-auto-yt-dl.png</Icon>
   <ExtraParams/>
