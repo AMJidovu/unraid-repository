@@ -16,7 +16,7 @@
 For more information visit the support thread &#xD;
 https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server/</Overview>
   <Category>Productivity: Tools:Utilities</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/unraid-ca-repo/onlyoffice-community-server.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/img/onlyoffice-ce-ds.jpg</Icon>
   <ExtraParams/>
