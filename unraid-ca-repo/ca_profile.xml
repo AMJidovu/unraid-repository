@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/AMJidovu/unraid-repository/master/img/avatar.jpg</Icon>
+  <Profile>
+    I love Unraid and creating Docker containers is one of my hobbies.
+  </Profile>
+  <DonateLink>https://www.paypal.me/xternet</DonateLink>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+</Maintainer>
