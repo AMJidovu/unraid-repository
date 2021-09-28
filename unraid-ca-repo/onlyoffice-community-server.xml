@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>onlyoffice-community-server</Name>
-  <Repository>xternet/unraid-onlyoffice-community-server:19e874098bccc482ec52374d1925d51cecefee1e</Repository>
+  <Repository>xternet/unraid-onlyoffice-community-server</Repository>
   <Registry>https://hub.docker.com/repository/docker/xternet/unraid-onlyoffice-community-server</Registry>
   <Network>onlyoffice</Network>
   <MyIP/>
