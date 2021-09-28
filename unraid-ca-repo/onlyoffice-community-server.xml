@@ -28,7 +28,7 @@ https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-serv
   <Description>Before you start this container you need to create the onlyoffice network. &#xD;
 	  Open Unraid terminal and paste this command in there: &#xD;
 	 ' sudo docker network create --driver bridge onlyoffice ' -- without ' '&#xD;
-	  HTTPS Support can be enable creating a "certs" folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it&#xD;
+	  HTTPS Support can be enable creating a " certs " folder in the data directory and placing onlyoffice.crt and onlyoffice.key in it&#xD;
 For more information visit the support thread &#xD;
 https://forums.unraid.net/topic/85643-support-amjidovu-onlyoffice-community-server/</Description>
   <Networking>
